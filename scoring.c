@@ -62,20 +62,3 @@ int calculate_score(char character) {
 
     return score;
 }
-
-int main() {
-    char word[100];
-    int total_score = 0;
-
-    printf("Masukkan kata: ");
-    scanf("%s", word);
-
-    for (int i = 0; i < strlen(word); i++) {
-        word[i] = tolower(word[i]);
-        total_score += calculate_score(word[i]);
-    }
-
-    printf("Total skor dari kata %s adalah %d\n", word, total_score);
-
-    return 0;
-}
