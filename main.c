@@ -1,16 +1,8 @@
 #include <stdio.h>
-#include <string.h>
-#ifdef _WIN32
-    #include <conio.h>
-#endif
-
+#include <stdlib.h>
+#include "header.h"
 int main() {
-    #ifdef _WIN32
-        system("cls"); // Untuk Windows
-    #else
-        system("clear"); // Untuk Linux/Unix
-    #endif
-
+    system("cls");
     int garis = 0;
     int panjang = 0;
     int Kalimat = 0;
@@ -34,20 +26,54 @@ int main() {
     scanf("%d", &Kelompok4);
 
     // Proses pilihan
-    switch (Kelompok4) {
-        case 1:
-            // Tambahkan kode untuk Opsi 1 di sini
-            break;
-        case 2:
-            // Tambahkan kode untuk Opsi 2 di sini
-            break;
-        case 3:
-            // Tambahkan kode untuk Opsi 3 di sini
-            break;
-        default:
-            printf("Pilihan tidak valid!\n");
-            break;
+    if (Kelompok4==1) {
+        system("cls");
+
+        break;
+}
+    else if(Kelompok4==2){
+        system("cls");
+
     }
+    else if(Kelompok4==3){
+        exit(1);
+    }
+    else {
+        system("cls");
+        printf("Selamat Datang di BIG CHALLENGE\n");
+        printf("Pilihan Kamu tidak valid!!\nSilahkan pilih Ulang");
+    }
+
+}while (kelompok4!=1 || jawab!=3);
+
+do{
+    printf("\n\n");
+    printf("1. Masukan Data ke File Bin\n");
+    printf("2. Tampilkan Data Dari Bin\n");
+    printf("3. Keluar Dari Program\n ");
+    printf("Silakan pilih menu =>")
+    scanf("%d",&kelompok4);
+    if(kelompok4==1);
+}
+if (Kelompok4==1) {
+        system("cls");
+
+        break;
+}
+    else if(Kelompok4==2){
+        system("cls");
+
+    }
+    else if(Kelompok4==3){
+        exit(1);
+    }
+    else {
+        system("cls");
+        printf("Selamat Datang di BIG CHALLENGE\n");
+        printf("Pilihan Kamu tidak valid!!\nSilahkan pilih Ulang");
+    }   
+
+}while (kelompok4!=1 || jawab!=3);
 
     return 0;
 }

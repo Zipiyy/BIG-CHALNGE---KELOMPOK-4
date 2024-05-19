@@ -4,33 +4,33 @@
 #include <ctype.h>
 #include "header.h"
 
-int calculate_score(char character) {
+int calculate_score(char kalimat) {
     int score = 0;
-    if (character == 'a') {
+    if (kalimat == 'a') {
         score = 1;
-    } else if (character == 'b') {
+    } else if (kalimat == 'b') {
         score = 4;
-    } else if (character == 'c') {
+    } else if (kalimat == 'c') {
         score = 3;
-    } else if (character == 'd') {
+    } else if (kalimat == 'd') {
         score = 7;
-    } else if (character == 'e') {
+    } else if (kalimat == 'e') {
         score = 5;
-    } else if (character == 'f') {
+    } else if (kalimat == 'f') {
         score = 6;
-    } else if (character == 'g') {
+    } else if (kalimat == 'g') {
         score = 10;
-    } else if (character == 'h') {
+    } else if (kalimat == 'h') {
         score = 8;
-    } else if (character == 'i') {
+    } else if (kalimat == 'i') {
         score = 5;
-    } else if (character == 'j') {
+    } else if (kalimat == 'j') {
         score = 9;
-    } else if (character == 'k') {
+    } else if (kalimat == 'k') {
         score = 6;
-    } else if (character == 'l') {
+    } else if (kalimat == 'l') {
         score = 9;
-    } else if (character == 'm') {
+    } else if (kalimat == 'm') {
         score = 8;
     } else if (character == 'n') {
         score = 12;
