@@ -1,79 +1,100 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "header.h"
+
 int main() {
     system("cls");
     int garis = 0;
     int panjang = 0;
-    int Kalimat = 0;
-    int Kata = 0;
-    char namaFile[20];
-    char *pecahHuruf;
+    int karakter = 0;
+    int kata=0;
+    char fileName[20];
+    char *nilai;
 
+    //Menghitung ada berapa banyak karakter
+    karakter = countCharacter(karakter);
 
-    //Fungsi 
+    //Menghitung berapa banyak baris
+    garis = countLine(garis);
 
-    //Fungsi
+    //Menghitung kalimat tergaris ada pada karakter
+    panjang = countLenght(panjang);
+
+    //Mendeklarasikan array kalimat terpanajang
+    char kalimat[karakter];
+
+    //Melakuakan Scan //dan memasukkan hasil scan ke aray kalimat
+    characterToVariable(garis, panjang, kalimat);
+
+    //menghitung jumlah kata yang sudah di masukkan ke aray kalimat
+    kata = countWord(kata,karakter,kalimat);
+
+    //mendeklarasikan struct data dengan array sebanyak jumlah kata
+    data datas[kata];
+
+    //tokenisasi dan memanksukkan hasil token ke data struct
+    strtokCharacter(nilai, kalimat,datas);
+
+    //bubblesort
+    bubbleSort(datas,kata);
 
     int Kelompok4;
-
     // Tampilkan menu masuk
-    printf("Selamat Di Big challenge!\n");
-    printf("1. Masukukan Data Ke File Bin\n");
-    printf("2. Tampilkan Data Dari Bin\n");
-    printf("3. Keluar Dari Big Projek\n");
-    printf("Masukkan pilihan Anda: ");
-    scanf("%d", &Kelompok4);
+    int Answer;
+    do {
+        printf("========-------- BIG CHALLENGE KELOMPOK 4 --------========\n");
+        printf("Selamat Di Big challenge!\n");
+        printf("1. Masukukan Data Ke File Bin\n");
+        printf("2. Tampilkan Data Dari Bin\n");
+        printf("3. Keluar Dari Big challenge\n");
+        printf("Masukkan pilihan Anda: ");
+        scanf("%d", &Kelompok4);
 
-    // Proses pilihan
-    if (Kelompok4==1) {
-        system("cls");
+        // Proses pilihan
+        if (Kelompok4 == 1) {
+            system("cls");
+            writeToBinary(datas,kata);
+            break;
+        } else if (Kelompok4 == 2) {
+            system("cls");
+            printf("\nPilihlah nomor 1 terlebih dahulu\n\n");
+            break;
+        } else if (Kelompok4 == 3) {
+            exit(1);
+        } else {
+            system("cls");
+            printf("Selamat Datang di BIG CHALLENGE\n");
+            printf("Pilihan Kamu tidak valid!!\nSilahkan pilih Ulang");
+        }
+    } while (1);
 
-        break;
-}
-    else if(Kelompok4==2){
-        system("cls");
+    result hasil[kata];
+    do {
+        printf("\n\n");
+        printf("[1] Masukkan Data ke File Binary\n");
+        printf("[2] Tampilkan Data Dari Binary\n");
+        printf("[3] Keluar Dari Program\n");
+        printf("Silahkan Pilih Menu => ");
+        scanf("%d",&Kelompok4);
 
-    }
-    else if(Kelompok4==3){
-        exit(1);
-    }
-    else {
-        system("cls");
-        printf("Selamat Datang di BIG CHALLENGE\n");
-        printf("Pilihan Kamu tidak valid!!\nSilahkan pilih Ulang");
-    }
-
-}while (kelompok4!=1 || jawab!=3);
-
-do{
-    printf("\n\n");
-    printf("1. Masukan Data ke File Bin\n");
-    printf("2. Tampilkan Data Dari Bin\n");
-    printf("3. Keluar Dari Program\n ");
-    printf("Silakan pilih menu =>")
-    scanf("%d",&kelompok4);
-    if(kelompok4==1);
-}
-if (Kelompok4==1) {
-        system("cls");
-
-        break;
-}
-    else if(Kelompok4==2){
-        system("cls");
-
-    }
-    else if(Kelompok4==3){
-        exit(1);
-    }
-    else {
-        system("cls");
-        printf("Selamat Datang di BIG CHALLENGE\n");
-        printf("Pilihan Kamu tidak valid!!\nSilahkan pilih Ulang");
-    }   
-
-}while (kelompok4!=1 || jawab!=3);
+        //jika user memilih 1, maka akan memasukkan data ke file binary
+        if(Kelompok4==1) {
+            writeToBinary(datas,kata);
+        }
+        //jika user pilih 2, maka akan membaca file binary dan menampilkan hasil bacaannya
+        else if(Kelompok4==2) {
+            readBinary(hasil,kata);
+        }
+        //jika user memilih 3, maka akan keluar dari program
+        else if(Kelompok4==3) {
+            exit(1);
+        }
+        //jika user memilih angka yang buka tertera di menu, maka program akan meminta input ulang
+        else {
+            system("cls");
+            printf("Pilihan kamu tidak valid !!!\n Silahkan pilih Ulang\n");
+        }
+    } while(Kelompok4==1 || Kelompok4==2|| Kelompok4==3); //akan melakukan perulangan jika user memilih 1-3
 
     return 0;
 }
