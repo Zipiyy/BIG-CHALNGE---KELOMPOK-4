@@ -11,6 +11,8 @@ int main() {
     char fileName[20];
     char *nilai;
 
+    //Fungsion
+
     //Menghitung ada berapa banyak karakter
     karakter = countCharacter(karakter);
 
@@ -80,19 +82,19 @@ int main() {
         printf("======-----------CLOSE THE PROGRAM -------------=======|\n");
         scanf("%d",&Kelompok4);
 
-        //jika user memilih 1, maka akan memasukkan data ke file binary
+        // memasukkan data ke file binary
         if(Kelompok4==1) {
             writeToBinary(datas,kata);
         }
-        //jika user pilih 2, maka akan membaca file binary dan menampilkan hasil bacaannya
+        //membaca file binary dan menampilkan hasil bacaannya
         else if(Kelompok4==2) {
             readBinary(hasil,kata);
         }
-        //jika user memilih 3, maka akan keluar dari program
+        //maka akan keluar dari program
         else if(Kelompok4==3) {
             exit(1);
         }
-        //jika user memilih angka yang buka tertera di menu, maka program akan meminta input ulang
+        //jika user memilih angka yang bukan tertera di menu, maka program akan meminta input ulang
         else {
             system("cls");
             printf("Pilihan kamu tidak valid !!!\n Silahkan pilih Ulang\n");
