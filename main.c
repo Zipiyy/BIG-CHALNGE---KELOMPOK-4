@@ -7,7 +7,7 @@ int main() {
     int garis = 0;
     int panjang = 0;
     int karakter = 0;
-    int kata=0;
+    int kata=0; 
     char fileName[20];
     char *nilai;
 
@@ -43,11 +43,12 @@ int main() {
     int Answer;
     do {
         printf("========-------- BIG CHALLENGE KELOMPOK 4 --------========\n");
-        printf("Selamat Di Big challenge!\n");
-        printf("1. Masukukan Data Ke File Bin\n");
-        printf("2. Tampilkan Data Dari Bin\n");
-        printf("3. Keluar Dari Big challenge\n");
-        printf("Masukkan pilihan Anda: ");
+        printf("|              Selamat Di Big challenge!                 |\n");
+        printf("|            1. Masukukan Data Ke File Bin               |\n");
+        printf("|            2. Tampilkan Data Dari Bin                  |\n");
+        printf("|            3. Keluar Dari Big challenge                |\n");
+        printf("|               Masukkan pilihan Anda:                   |\n");
+        printf("========-----------CLOSE THE PROGRAM -------------========\n");
         scanf("%d", &Kelompok4);
 
         // Proses pilihan
@@ -71,10 +72,12 @@ int main() {
     result hasil[kata];
     do {
         printf("\n\n");
-        printf("[1] Masukkan Data ke File Binary\n");
-        printf("[2] Tampilkan Data Dari Binary\n");
-        printf("[3] Keluar Dari Program\n");
-        printf("Silahkan Pilih Menu => ");
+        printf("=====-------- BIG CHALLENGE KELOMPOK 4 --------========|\n");
+        printf("|            [1] Masukkan Data ke File Binary          |\n");
+        printf("|            [2] Tampilkan Data Dari Binary            |\n");
+        printf("|            [3] Keluar Dari Program                   |\n");
+        printf("|               Silahkan Pilih Menu =>                 |\n");
+        printf("======-----------CLOSE THE PROGRAM -------------=======|\n");
         scanf("%d",&Kelompok4);
 
         //jika user memilih 1, maka akan memasukkan data ke file binary
