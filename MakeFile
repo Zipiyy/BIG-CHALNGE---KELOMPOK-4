@@ -1,0 +1,1 @@
+gcc -o P main.c bubbleSort.c bacabin.c garis.c hurufangka.c kata.c panjang.c pisahkata.c skor.c tulisbin.c hitunghuruf.c linuxorwind.c
