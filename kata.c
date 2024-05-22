@@ -7,7 +7,7 @@
 int countCharacter(int karakter){
     char huruf;
     FILE * input;
-    input = fopen("input.txt","r");
+    input = fopen("inputkelompok4.txt","r");
     if(input==NULL){
         printf("Tidak dapat membuka file...");
         exit(1);

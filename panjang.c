@@ -7,7 +7,7 @@ int countLenght(int panjang){
     char huruf;
     char * sementara;
     FILE * input;
-    input = fopen("input.txt","r");
+    input = fopen("inputkelompok4.txt","r");
 
     if(input==NULL){
         printf("Tidak bisa membuka file...");

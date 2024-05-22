@@ -9,7 +9,7 @@ void characterToVariable(int garis,int panjang,char * kalimat){
     int i=0;
     int a=0;
     FILE * input;
-    input = fopen("input.txt","r");
+    input = fopen("inputkelompok4.txt","r");
     if(input==NULL){
         printf("Tidak dapat membuka file...");
         exit(1);

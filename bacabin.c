@@ -27,10 +27,10 @@ void readBinary(result hasil[],int kata){
     int j=0,k;
     do{
         printf("\n");
-        printf("Berapa point yang ingin di tampilkan (0<n<=75) : ");
+        printf("Berapa point yang ingin di tampilkan (0<n<=50) : ");
         scanf(" %d",&n);
         if(n<0||n>75){
-            printf("\nMasukkan angka dari 1 - 75 saja!!!\n");
+            printf("\nMasukkan angka dari 1 - 50 saja!!!\n");
         }
     }while(n<0||n>75);
 
