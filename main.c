@@ -51,9 +51,11 @@ int main() {
     int Answer;
 do {
     BersihkanSistem();
+    printf("=====------- Selamat Datang Di Big Challenge -------=====\n");
     printf(" Sebelum Memulai, Silahkan input nama file ( File.txt )\n\n");
-    printf(" [1] Input file text\n");
-    printf(" [2] exit\n\n");
+    printf(" |                   [1] Input file text                |\n");
+    printf(" |                   [2] exit                           |\n\n");
+    printf("========------- BIG CHALLENGE KELOMPOK 4 --------========\n");
     printf(" Pilihan Anda (1/2) : ");
     scanf("%d", &Kelompok4);
 
