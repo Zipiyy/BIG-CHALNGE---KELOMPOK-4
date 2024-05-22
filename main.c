@@ -129,10 +129,10 @@ do {
             } while (Kelompok4 == 1 || Kelompok4 == 2 || Kelompok4 == 3); //akan melakukan perulangan jika user memilih 1-3
 
             return 0;
+            }
         }
+    } while (Kelompok4 !=2); // Perulangan utama
+
+    return 0;
+
     }
-} while (Kelompok4 !=2); // Perulangan utama
-
-return 0;
-
-}
