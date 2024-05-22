@@ -3,10 +3,7 @@
 #include "header.h"
 
 //Fungsi Memilih WINDOWS Or Linux 
- void BersihkanSistem();
-    void Jeda();
-
-
+ 
 int main() {
     int garis = 0;
     int panjang = 0;
@@ -15,7 +12,9 @@ int main() {
     char fileName[20];
     char *nilai;
 
-    
+    //Fungsi System
+    BersihkanSistem();
+    Jeda();
 
     //Menghitung ada berapa banyak karakter
     karakter = countCharacter(karakter);

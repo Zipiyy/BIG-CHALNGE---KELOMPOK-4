@@ -2,6 +2,15 @@
 #include <stdlib.h>
 #include "header.h"
 
+
+
+#ifdef _WIN32
+    #include <windows.h>
+#else 
+    #include <unistd.h>
+#endif
+
+
 void BersihkanSistem() {
 #ifdef _WIN32
     system("cls");
@@ -14,6 +23,6 @@ void Jeda() {
 #ifdef _WIN32
     Sleep(2000); // Windows
 #else
-    _sleep(2); // Linux
+    sleep(2); // Linux
 #endif
 }
