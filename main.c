@@ -2,8 +2,12 @@
 #include <stdlib.h>
 #include "header.h"
 
+//Fungsi Memilih WINDOWS Or Linux 
+ void BersihkanSistem();
+    void Jeda();
+
+
 int main() {
-    system("cls");
     int garis = 0;
     int panjang = 0;
     int karakter = 0;
@@ -11,7 +15,7 @@ int main() {
     char fileName[20];
     char *nilai;
 
-    //Fungsion
+    
 
     //Menghitung ada berapa banyak karakter
     karakter = countCharacter(karakter);

@@ -26,6 +26,7 @@ void bubbleSort(data datas[],int );
 void selectionSort(data datas[],int );
 void writeToBinary(data datas[],int );
 void readBinary(result hasil[],int );
-void Clear_System();
+void BersihkanSistem();
+void Jeda();
 
 #endif
