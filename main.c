@@ -49,7 +49,7 @@ int main() {
     int Kelompok4;
     // Tampilkan menu masuk
     int Answer;
-do {
+do {    
     BersihkanSistem();
     printf("=====------- Selamat Datang Di Big Challenge -------=====\n");
     printf(" Sebelum Memulai, Silahkan input nama file ( File.txt )\n\n");
